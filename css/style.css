@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: .16rem;
+}
+
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  background: #333;
+}
+
+header span {
+  color: #fff;
+}
+
+header span:nth-child(1) {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header span:nth-child(2) {
+  flex: 6;
+  line-height: .5rem;
+}
+
+header span:nth-child(3) {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header span:nth-child(3) i {
+  width: .06rem;
+  height: .06rem;
+  border-radius: 100%;
+  background: #fff;
+  display: inline-block;
+  margin-bottom: .02rem;
+}
+
+main {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  width: 90%;
+  height: 400px;
+  background: #fff;
+  border-radius: .1rem;
+}
+
+main section .logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: .2rem;
+}
+
+main section .logo p {
+  width: 40%;
+  height: .6rem;
+  background: url("../img/logo_01.png") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+main section .logo h3 {
+  color: #666;
+}
+
+main section form {
+  width: 100%;
+  height: auto;
+  padding: 0 .2rem;
+}
+
+main section form div {
+  position: relative;
+}
+
+main section form div b {
+  width: .3rem;
+  height: .3rem;
+  display: inline-block;
+  position: absolute;
+  left: .1rem;
+  top: .15rem;
+}
+
+main section form div:nth-child(1) b {
+  background: url("../img/icon_01.png") no-repeat;
+  background-size: 60% auto;
+}
+
+main section form div:nth-child(2) b {
+  background: url("../img/icon_03.png") no-repeat;
+  background-size: 60% auto;
+}
+
+main section form input {
+  width: 100%;
+  height: .5rem;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding-left: .4rem;
+}
+
+main section form ::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+main section button {
+  width: 90%;
+  height: .4rem;
+  margin-left: 5%;
+  margin-top: .3rem;
+  background: green;
+  color: #fff;
+  border: 0;
+  border-radius: .05rem;
+}
